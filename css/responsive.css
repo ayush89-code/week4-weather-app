@@ -1,0 +1,16 @@
+@media (max-width: 400px) {
+    #temperature {
+        font-size: 2.5rem;
+    }
+    
+    .weather-details {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .forecast-grid {
+        flex-wrap: wrap; 
+        /* Allow wrapping on very small screens */
+    }
+}

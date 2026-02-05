@@ -1,0 +1,105 @@
+:root {
+    --primary: #5c6bc0;
+    --secondary: #26c6da;
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --text: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.app-container {
+    background: var(--card);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hidden { display: none !important; }
+
+/* Search Bar */
+.search-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+#city-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { opacity: 0.9; }
+
+/* Unit Toggles */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.unit-btn {
+    background: #eee;
+    color: #333;
+    padding: 5px 15px;
+}
+
+.unit-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+/* Current Weather */
+.current-weather {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.temp-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temperature {
+    font-size: 3.5rem;
+    margin: 10px 0;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
